@@ -1,0 +1,23 @@
+[
+  {
+    "transport": "car",
+    "electricity": "high",
+    "recycling": "no",
+    "meat_consumption": "high",
+    "water_usage": "high"
+  },
+  {
+    "transport": "bike",
+    "electricity": "low",
+    "recycling": "yes",
+    "meat_consumption": "low",
+    "water_usage": "low"
+  },
+  {
+    "transport": "bus",
+    "electricity": "medium",
+    "recycling": "yes",
+    "meat_consumption": "medium",
+    "water_usage": "medium"
+  }
+]

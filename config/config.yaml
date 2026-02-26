@@ -1,0 +1,43 @@
+project:
+  name: TerraMind
+  version: 1.0.0
+  description: AI-powered climate impact analyzer
+  author: TerraMind Team
+
+paths:
+  raw_data: data/raw_dataset.csv
+  cleaned_data: data/cleaned_dataset.csv
+  model_path: model/model.pkl
+  encoder_path: model/encoder.pkl
+  evaluation_report: model/evaluation_report.txt
+
+model:
+  type: decision_tree          # options: decision_tree, random_forest
+  max_depth: 5
+  random_state: 42
+
+training:
+  test_size: 0.2
+  shuffle: true
+  stratify: true
+
+features:
+  categorical:
+    - transport
+    - electricity
+    - recycling
+    - meat_consumption
+    - water_usage
+
+  target: impact
+
+evaluation:
+  metrics:
+    - accuracy
+    - precision
+    - recall
+    - f1_score
+
+logging:
+  level: INFO
+  save_logs: false
